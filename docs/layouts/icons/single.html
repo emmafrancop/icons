@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "header" . }}
+  </head>
+  <body id="icons-body">
+    {{ partial "skippy" . }}
+    {{ partial "navbar" . }}
+
+    <main class="container" id="content" role="main">
+      <nav>
+        <ul class="breadcrumb my-4 bg-transparent p-0">
+          <li class="breadcrumb-item">Icons</li>
+          <li class="breadcrumb-item">{{ .Title }}</li>
+        </ul>
+      </nav>
+
+      <h1>{{ .Title }}</h1>
+      <p>Tags: {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
+
+      {{- $filenameWithExt := split .Name "." -}}
+      {{- $filename := index $filenameWithExt 0 -}}
+      {{- $name := humanize $filename -}}
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 bg-light rounded" style="font-size: 20em;">
+            {{ readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) | chomp | safeHTML }}
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 bg-light rounded" style="font-size: 10em">
+            {{ readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) | chomp | safeHTML }}
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 bg-light rounded" style="font-size: 2em">
+            {{ readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) | chomp | safeHTML }}
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="d-flex align-items-center justify-content-center p-3 py-4 mb-2 bg-light rounded" style="font-size: 1em">
+            {{ readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) | chomp | safeHTML }}
+          </div>
+        </div>
+      </div>
+
+      {{- $source := readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) }}
+      {{ highlight $source "html" "" }}
+    </main>
+
+    {{- partial "footer" . }}
+    {{- partial "scripts" . }}
+  </body>
+</html>
