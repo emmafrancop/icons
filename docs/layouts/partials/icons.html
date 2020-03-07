@@ -17,7 +17,9 @@
         <div class="p-3 py-4 mb-2 bg-light text-center rounded">
           {{ readFile (printf "%s/%s" $dirName .Name) | chomp | safeHTML }}
         </div>
-        <div class="name text-muted text-center pt-1">{{ $name }}</div>
+        <a class="d-block name text-muted text-center pt-1" href="/icons/{{ $filename }}">
+          {{ $name }}
+        </a>
       </li>
     {{ end -}}
   </ul>
