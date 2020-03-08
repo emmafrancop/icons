@@ -1,5 +1,5 @@
 ---
-title: Brightness fill low
+title: Brightness low fill
 layout: icon
 categories:
   - UI and keyboard
