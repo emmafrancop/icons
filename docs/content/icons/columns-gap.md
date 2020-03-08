@@ -1,5 +1,5 @@
 ---
-title: Columns gutters
+title: Columns gap
 layout: icon
 categories:
   - Layout
