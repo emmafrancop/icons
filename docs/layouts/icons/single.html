@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <h2 class="h4">Copy SVG code</h2>
+      <h2 class="h4 mb-3">Copy SVG code</h2>
       {{- $source := readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) }}
       {{ highlight $source "html" "" }}
     </main>
