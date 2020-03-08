@@ -1,0 +1,15 @@
+// clipboard.js
+//
+// JS-based `Copy` buttons for code snippets.
+
+.bd-clipboard {
+  position: relative;
+  float: right;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+}
