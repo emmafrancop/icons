@@ -19,9 +19,6 @@
         <div class="col-md-8">
           <h1>{{ .Title }}</h1>
           <p>Tags: {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
-          <p class="d-none">
-            <a class="btn btn-primary" href="{{ printf "/%s/%s.svg" "icons" .File.TranslationBaseName }}">Download</a>
-          </p>
         </div>
         <div class="col-md-4">
           <script async src="https://cdn.carbonads.com/carbon.js?serve=CE7D4277&placement=iconsgetbootstrapcom" id="_carbonads_js"></script>
