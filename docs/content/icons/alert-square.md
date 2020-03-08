@@ -1,10 +1,9 @@
 ---
-title: Alert Square
+title: Alert square
 layout: icon
 categories:
-  - alerts
-  - shapes
+  - Alerts, warnings, and signs
 tags:
   - alert
-  - square
+  - warning
 ---

@@ -1,10 +1,9 @@
 ---
-title: Alert Circle
+title: Alert circle
 layout: icon
 categories:
-  - alerts
-  - shapes
+  - Alerts, warnings, and signs
 tags:
   - alert
-  - circle
+  - warning
 ---

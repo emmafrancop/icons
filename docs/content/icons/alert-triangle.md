@@ -1,10 +1,9 @@
 ---
-title: Alert Triangle
+title: Alert triangle
 layout: icon
 categories:
-  - alerts
-  - shapes
+  - Alerts, warnings, and signs
 tags:
   - alert
-  - triangle
+  - warning
 ---
