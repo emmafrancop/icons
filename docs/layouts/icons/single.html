@@ -55,6 +55,7 @@
       </div>
 
       <h2 class="h4 mb-3">Copy SVG code</h2>
+      <div class="alert alert-info">Copy to clipboard button hopefully coming in next release, sorry!</div>
       {{- $source := readFile (printf "/%s/%s.svg" "icons" .File.TranslationBaseName) }}
       {{ highlight $source "html" "" }}
     </main>
