@@ -1,10 +1,9 @@
 ---
-title: Alert Octagon
+title: Alert octagon
 layout: icon
 categories:
-  - alerts
-  - shapes
+  - Alerts, warnings, and signs
 tags:
   - alert
-  - octagon
+  - warning
 ---
