@@ -2,7 +2,7 @@
 title: Alarm Fill
 layout: icon
 categories:
-  - Real world
+  - Devices
 tags:
   - alarm
   - clock
