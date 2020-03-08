@@ -1,21 +1,22 @@
 // stylelint-disable comment-empty-line-before, declaration-block-single-line-max-declarations, selector-class-pattern
 
-// .bd-example {
-//   padding: 1.5rem;
-//   border: .125rem solid rgba(0, 0, 0, .025);
-// }
-//
 .highlight {
   pre {
-    padding: 1.625rem;
-    margin-bottom: 1.25rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     background-color: rgba(0, 0, 0, .025);
+    border-radius: .25rem;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    code {
+      word-wrap: normal;
+    }
   }
 }
-
-// .chroma {
-//   margin-bottom: 0;
-// }
 
 .chroma .dl { color: #4070a0; }
 .chroma .c { color: #999; }
