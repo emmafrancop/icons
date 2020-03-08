@@ -60,18 +60,5 @@
     </main>
 
     {{- partial "footer" . }}
-
-    <!-- <script src="/assets/js/bootstrap.bundle.min.js"></script> -->
-
-    {{- $vendor := resources.Match "js/vendor/*.js" -}}
-    {{- $js := resources.Match "js/*.js" -}}
-    {{- $targetDocsJSPath := "assets/js/docs.js" -}}
-    {{- $docsJs := append $js $vendor | resources.Concat $targetDocsJSPath -}}
-
-    {{- if eq hugo.Environment "production" -}}
-      {{- $docsJs = $docsJs | resources.Minify -}}
-    {{- end }}
-
-    <script src="{{ $docsJs.Permalink | relURL }}"></script>
   </body>
 </html>
